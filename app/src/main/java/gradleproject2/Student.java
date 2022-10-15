@@ -17,7 +17,7 @@ public class Student {
     public String DoB;
     public String username;
     public int id;
-    public String course;
+    public ArrayList<String> courses = new ArrayList<String>();
     public ArrayList<String> modules = new ArrayList<String>();
 
 	public Student(String name, int age, int id)
@@ -67,12 +67,12 @@ public class Student {
         this.id = id;
     }
 
-    public String getCourse() {
-        return course;
+    public ArrayList<String> getCourses() {
+        return courses;
     }
 
-    public void setCourse(String course) {
-        this.course = course;
+    public void setCourses(ArrayList<String> courses) {
+        this.courses = courses;
     }
     
     public void addModules(String module)
@@ -87,6 +87,12 @@ public class Student {
 	public void setModules(ArrayList<String> modules) {
 		this.modules = modules;
 	}
+
+    @Override
+    public String toString() {
+        return "Student{" + "name=" + name + ", username=" + username + ", courses=" + courses + ", modules=" + modules + '}';
+    }
+        
     
     public static void main(String args[]) {
         // TODO code application logic here

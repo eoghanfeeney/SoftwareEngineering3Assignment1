@@ -19,11 +19,12 @@ public class CourseProgramme {
     public DateTime startDate; 
     public DateTime endDate; 
     
-    public CourseProgramme(String courseName, DateTime startDate, DateTime endDate)
+    public CourseProgramme(String courseName, DateTime startDate, DateTime endDate, ArrayList<String> assossiatedModules)
     {
         this.courseName = courseName;
         this.startDate = startDate;
         this.endDate = endDate;
+        this.assossiatedModules =assossiatedModules;
     }
 
     public String getCourseName() {
@@ -65,6 +66,13 @@ public class CourseProgramme {
     public void setEndDate(DateTime endDate) {
         this.endDate = endDate;
     }
+
+    @Override
+    public String toString() {
+        return "CourseProgramme{" + "courseName=" + courseName + ", assossiatedModules=" + assossiatedModules + '}';
+    }
+
+    
     
     
 }

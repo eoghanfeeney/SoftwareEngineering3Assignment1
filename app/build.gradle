@@ -29,7 +29,7 @@ dependencies {
     // https://mvnrepository.com/artifact/org.terasoluna.gfw/terasoluna-gfw-jodatime
     implementation 'org.terasoluna.gfw:terasoluna-gfw-jodatime:5.7.1.SP1.RELEASE'
 
-    implementation 'com.github.eoghanfeeney:SoftwareEngineering3Assignment1:master-SNAPSHOT'
+    implementation 'com.github.eoghanfeeney:SoftwareEngineering3Assignment1:v3'
 
 
 }

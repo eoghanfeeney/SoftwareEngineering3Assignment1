@@ -19,12 +19,9 @@ public class CourseProgramme {
     public DateTime startDate; 
     public DateTime endDate; 
     
-    public CourseProgramme(String courseName, DateTime startDate, DateTime endDate, ArrayList<String> assossiatedModules)
+    public CourseProgramme(String courseName)
     {
         this.courseName = courseName;
-        this.startDate = startDate;
-        this.endDate = endDate;
-        this.assossiatedModules =assossiatedModules;
     }
 
     public String getCourseName() {

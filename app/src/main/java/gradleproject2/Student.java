@@ -17,8 +17,8 @@ public class Student {
     public String DoB;
     public String username;
     public int id;
-    public ArrayList<CourseProgramme> courses = new ArrayList<CourseProgramme>();
-    public ArrayList<Module> modules = new ArrayList<Module>();
+    public ArrayList<String> courses = new ArrayList<String>();
+    public ArrayList<String> modules = new ArrayList<String>();
 
 	public Student(String name, int age, int id)
     {
@@ -67,31 +67,33 @@ public class Student {
         this.id = id;
     }
 
-    public ArrayList<CourseProgramme> getCourses() {
+    public ArrayList<String> getCourses() {
         return courses;
     }
 
-    public void setCourses(ArrayList<CourseProgramme> courses) {
+    public void setCourses(ArrayList<String> courses) {
         this.courses = courses;
     }
     
-    public void addModules(Module module)
+    public void addModules(String module)
     {
     	modules.add(module);
     }
     
-    public ArrayList<Module> getModules() {
+    public ArrayList<String> getModules() {
 		return modules;
 	}
 
-	public void setModules(ArrayList<Module> modules) {
+	public void setModules(ArrayList<String> modules) {
 		this.modules = modules;
 	}
 
     @Override
     public String toString() {
-        return "Student{" + "name=" + name + "\n username=" + getUsername() + '}';
+        return "\n\n Student: \n" + " name = " + name + "\n username = " + username + "\n courses = " + courses + "\n modules = " + modules;
     }
+
+    
         
     
 }

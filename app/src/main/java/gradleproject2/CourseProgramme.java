@@ -67,7 +67,7 @@ public class CourseProgramme {
 
     @Override
     public String toString() {
-        return "CourseProgramme{" + "courseName=" + courseName + "\n assossiatedModules=" + assossiatedModules + '}';
+        return "CourseProgramme: \n" + " courseName = " + courseName + "\n assossiatedModules = " + assossiatedModules;
     }
 
     

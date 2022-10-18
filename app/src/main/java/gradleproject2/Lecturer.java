@@ -18,7 +18,7 @@ public class Lecturer {
     public String DoB;
     public String username;
     public int id;
-    public ArrayList<String> modulesTeaching = new ArrayList<String>();
+    public ArrayList<Module> modulesTeaching = new ArrayList<Module>();
 
     public Lecturer(String name, int age, int id)
     {
@@ -76,26 +76,20 @@ public class Lecturer {
 	}
 
 
-	public ArrayList<String> getModulesTeaching() {
+	public ArrayList<Module> getModulesTeaching() {
 		return modulesTeaching;
 	}
 
 
-	public void setModulesTeaching(ArrayList<String> modulesTeaching) {
+	public void setModulesTeaching(ArrayList<Module> modulesTeaching) {
 		this.modulesTeaching = modulesTeaching;
 	}
 
-	public void addModules(String module)
+	public void addModules(Module module)
     {
     	modulesTeaching.add(module);
     }
 	
-	public static void main(String[] args) {
-		Lecturer l1 = new Lecturer("Mark", 47, 101);
-	    l1.addModules("math");
-	    l1.addModules("English");
-	    System.out.println(l1.getUsername());
-	    System.out.println(l1.getModulesTeaching());
-	}
+	
 
 }

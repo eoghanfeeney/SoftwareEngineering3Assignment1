@@ -15,8 +15,8 @@ public class Module {
     public String moduleName;
     public String moduleId;
     public String moduleLecturer;
-    public ArrayList<String> students = new ArrayList<String>();
-    public ArrayList<String> assossiatedCourses = new ArrayList<String>();
+    public ArrayList<Student> students = new ArrayList<Student>();
+    public ArrayList<CourseProgramme> assossiatedCourses = new ArrayList<CourseProgramme>();
 	
     public Module(String moduleName, String moduleId) {
 	this.moduleName = moduleName;
@@ -47,21 +47,28 @@ public class Module {
 		this.moduleLecturer = moduleLecturer;
 	}
 
-	public ArrayList<String> getStudents() {
+	public ArrayList<Student> getStudents() {
 		return students;
 	}
 
-	public void setStudents(ArrayList<String> students) {
+	public void setStudents(ArrayList<Student> students) {
 		this.students = students;
 	}
 
-	public ArrayList<String> getAssossiatedCourses() {
+	public ArrayList<CourseProgramme> getAssossiatedCourses() {
 		return assossiatedCourses;
 	}
 
-	public void setAssossiatedCourses(ArrayList<String> assossiatedCourses) {
+	public void setAssossiatedCourses(ArrayList<CourseProgramme> assossiatedCourses) {
 		this.assossiatedCourses = assossiatedCourses;
 	}
+
+    @Override
+    public String toString() {
+        return "Module{" + "moduleName=" + moduleName + ", moduleId=" + moduleId + '}';
+    }
+        
+        
 
 
 }

@@ -14,8 +14,8 @@ import org.joda.time.DateTime;
 
 public class CourseProgramme {
     public String courseName;
-    public ArrayList<String> studentsEnrolled = new ArrayList<String>();
-    public ArrayList<String> assossiatedModules = new ArrayList<String>();
+    public ArrayList<Student> studentsEnrolled = new ArrayList<Student>();
+    public ArrayList<Module> assossiatedModules = new ArrayList<Module>();
     public DateTime startDate; 
     public DateTime endDate; 
     
@@ -32,20 +32,12 @@ public class CourseProgramme {
         this.courseName = courseName;
     }
 
-    public ArrayList<String> getStudentsEnrolled() {
+    public ArrayList<Student> getStudentsEnrolled() {
         return studentsEnrolled;
     }
 
-    public void setStudentsEnrolled(ArrayList<String> studentsEnrolled) {
+    public void setStudentsEnrolled(ArrayList<Student> studentsEnrolled) {
         this.studentsEnrolled = studentsEnrolled;
-    }
-
-    public ArrayList<String> getAssossiatedModules() {
-        return assossiatedModules;
-    }
-
-    public void setAssossiatedModules(ArrayList<String> assossiatedModules) {
-        this.assossiatedModules = assossiatedModules;
     }
 
     public DateTime getStartDate() {
@@ -64,12 +56,20 @@ public class CourseProgramme {
         this.endDate = endDate;
     }
 
+    public ArrayList<Module> getAssossiatedModules() {
+        return assossiatedModules;
+    }
+
+    public void setAssossiatedModules(ArrayList<Module> assossiatedModules) {
+        this.assossiatedModules = assossiatedModules;
+    }
+    
+
     @Override
     public String toString() {
         return "CourseProgramme{" + "courseName=" + courseName + ", assossiatedModules=" + assossiatedModules + '}';
     }
 
-    
     
     
 }

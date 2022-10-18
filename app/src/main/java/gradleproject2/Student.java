@@ -17,8 +17,8 @@ public class Student {
     public String DoB;
     public String username;
     public int id;
-    public ArrayList<String> courses = new ArrayList<String>();
-    public ArrayList<String> modules = new ArrayList<String>();
+    public ArrayList<CourseProgramme> courses = new ArrayList<CourseProgramme>();
+    public ArrayList<Module> modules = new ArrayList<Module>();
 
 	public Student(String name, int age, int id)
     {
@@ -67,24 +67,24 @@ public class Student {
         this.id = id;
     }
 
-    public ArrayList<String> getCourses() {
+    public ArrayList<CourseProgramme> getCourses() {
         return courses;
     }
 
-    public void setCourses(ArrayList<String> courses) {
+    public void setCourses(ArrayList<CourseProgramme> courses) {
         this.courses = courses;
     }
     
-    public void addModules(String module)
+    public void addModules(Module module)
     {
     	modules.add(module);
     }
     
-    public ArrayList<String> getModules() {
+    public ArrayList<Module> getModules() {
 		return modules;
 	}
 
-	public void setModules(ArrayList<String> modules) {
+	public void setModules(ArrayList<Module> modules) {
 		this.modules = modules;
 	}
 
@@ -94,12 +94,4 @@ public class Student {
     }
         
     
-    public static void main(String args[]) {
-        // TODO code application logic here
-        Student s1 = new Student("pablo", 10, 981);
-        s1.addModules("math");
-        s1.addModules("English");
-        System.out.println(s1.getUsername());
-        System.out.println(s1.getModules());
-    }
 }

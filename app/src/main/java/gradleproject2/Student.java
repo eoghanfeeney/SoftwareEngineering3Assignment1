@@ -90,7 +90,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" + "name=" + name + ", username=" + username + ", courses=" + courses + ", modules=" + modules + '}';
+        return "Student{" + "name=" + name + "/n username=" + username + "/n courses=" + courses + "/n modules=" + modules + '}';
     }
         
     

@@ -90,7 +90,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "\n\n Student: \n" + " name = " + name + "\n username = " + username + "\n courses = " + courses + "\n modules = " + modules;
+        return "\n\n Student: \n" + " name = " + name + "\n username = " + getUsername() + "\n courses = " + courses + "\n modules = " + modules;
     }
 
     
